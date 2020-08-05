@@ -75,7 +75,57 @@
             для вашего бизнеса
           </h1>
           <button type="button" class="hero-button">Заказать услугу</button>
-        </div>
+
+          <!-- Бэкдроп и Модалка -->
+
+          <div>
+            <form action="" class="modal-form">
+              <h2 class="modal-form-title">
+                Оставте свои данные, мы вам перезвоним
+              </h2>
+              <label>
+                Имя
+                <input
+                  class="modal-form-input"
+                  type="text"
+                  name="name"
+                  autocomplete="name"
+                />
+              </label>
+              <label>
+                Телефон
+                <input
+                  class="modal-form-input"
+                  type="text"
+                  name="tel"
+                  autocomplete="tel"
+                />
+              </label>
+              <label>
+                Почта
+                <input
+                  class="modal-form-input"
+                  type="text"
+                  name="email"
+                  autocomplete="email"
+                />
+              </label>
+
+              <textarea
+                class="modal-form-message"
+                name="user-message"
+                id="comments"
+                placeholder="сообщение"
+              ></textarea>
+              <label class="checkbox">
+<input class="modal-form-checkbox" type="checkbox" name="checkbox"/>
+<span class="modal-form-checkbox-custom"></span>
+<span class="modal-form-checkbox-texy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></span>
+              </label>
+              
+              <button type="submit" class="modal-form-btn">Отправить</button>
+            </form>
+          </div>
       </section>
 
       <!--Преимущества-->
