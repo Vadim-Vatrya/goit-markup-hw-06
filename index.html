@@ -13,7 +13,9 @@
   </head>
 
   <body>
+
     <!--Шапка сайта-->
+
     <header class="header">
       <div class="container">
         <nav class="navigation">
@@ -78,44 +80,37 @@
 
           <!-- Бэкдроп и Модалка -->
 
-          <div>
+          <div class="backdrop is-hidden">
             <form action="" class="modal-form">
               <h2 class="modal-form-title">
                 Оставте свои данные, мы вам перезвоним
               </h2>
-              <label>
-                Имя
-                <input
-                  class="modal-form-input"
-                  type="text"
-                  name="name"
-                  autocomplete="name"
-                />
-              </label>
-              <label>
-                Телефон
-                <input
-                  class="modal-form-input"
-                  type="text"
-                  name="tel"
-                  autocomplete="tel"
-                />
-              </label>
-              <label>
-                Почта
-                <input
-                  class="modal-form-input"
-                  type="text"
-                  name="email"
-                  autocomplete="email"
-                />
-              </label>
+              <div class="modal-form-input-wrapper">
+                <label>
+                  Имя
+                  <input class="modal-form-input" type="text" name="name" autocomplete="name" />
+                </label>
+              </div>
+              <div class="modal-form-input-wrapper">
+                <label>
+                  Телефон
+                  <input class="modal-form-input" type="tel" name="tel" autocomplete="tel" />
+                </label>
+              </div>
+              
+              <div class="modal-form-input-wrapper">
+                <label>
+                  Почта
+                  <input class="modal-form-input" type="email" name="email" autocomplete="email" />
+                </label>
+              </div>
+              
 
               <textarea
                 class="modal-form-message"
                 name="user-message"
                 id="comments"
-                placeholder="сообщение"
+                placeholder="Комментарий"
               ></textarea>
               <label class="checkbox">
 <input class="modal-form-checkbox" type="checkbox" name="checkbox"/>
